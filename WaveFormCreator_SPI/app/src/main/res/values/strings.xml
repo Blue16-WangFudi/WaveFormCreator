@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WaveFormCreator_SPI</string>
+    <string-array name="waveforms_array">
+        <item>正弦波</item>
+        <item>三角波</item>
+        <item>方波</item>
+    </string-array>
+</resources>

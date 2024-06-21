@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/label_waveform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="波形"
+        android:layout_below="@id/title"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_waveform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/label_waveform"
+        android:layout_alignBaseline="@id/label_waveform"/>
+
+    <TextView
+        android:id="@+id/label_frequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="频率 (Hz)"
+        android:layout_below="@id/label_waveform"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_frequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_toEndOf="@id/label_frequency"
+        android:layout_alignBaseline="@id/label_frequency"/>
+
+    <TextView
+        android:id="@+id/label_amplitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="峰峰值 (mV)"
+        android:layout_below="@id/label_frequency"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_amplitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_toEndOf="@id/label_amplitude"
+        android:layout_alignBaseline="@id/label_amplitude"/>
+
+    <TextView
+        android:id="@+id/label_phase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="相位 (deg)"
+        android:layout_below="@id/label_amplitude"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_phase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_toEndOf="@id/label_phase"
+        android:layout_alignBaseline="@id/label_phase"/>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下发数据"
+        android:layout_below="@id/label_phase"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
